@@ -1,2 +1,5 @@
-# Clipboard-Landing
-Second Project By Frontend Mentor
+# Frontend Mentor - Clipboard landing page
+
+![Design preview for the Clipboard landing page coding challenge](./design/desktop-preview.jpg)
+
+## Welcome! 👋

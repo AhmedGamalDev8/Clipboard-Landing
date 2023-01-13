@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 18px;
+  font-family: "Bai Jamjuree";
+}
+/* Start Colors Variables */
+:root {
+  --colorOne: hsl(171, 66%, 44%);
+  --colorTwo: hsl(233, 100%, 69%);
+  --colorThree: hsl(210, 10%, 33%); 
+  --colorFour: hsl(201, 11%, 66%);
+  --separateSections: 100px;
+  --globalLineHeight: 1.6;
+}
+/* End Colors Variables */
+/* Start Globals */
+html {
+  scroll-behavior: smooth;
+}
+section.text {
+  text-align: center;
+  margin-top: var(--separateSections);
+  margin-bottom: var(--separateSections);
+  position: relative;
+}
+section.text h2 {
+  text-align: center;
+  color: var(--colorThree);
+  margin-bottom: 20px;
+}
+section.text p {
+  color: var(--colorFour);
+  text-align: center;
+  line-height: var(--globalLineHeight);
+}
+section.section1,
+section.section2,
+section.section3,
+section.section4 {
+  margin-top: var(--separateSections);
+  margin-bottom: var(--separateSections);
+}
+section.section3,
+section.section4 {
+  padding-right: 10%;
+  padding-left: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+ul {
+  list-style: none;
+}
+ul li {
+  display: inline-block;
+}
+ul li a {
+  text-decoration: none;
+  color: var(--colorThree);
+  margin: 20px;
+}
+/* End Globals */
+/* Start Landing Section */
+header.landing {
+  height: 100vh;
+  text-align: center;
+  background-image: url(../images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+}
+header.landing main {
+  padding-top: 10%;
+}
+header.landing main img {
+  padding-bottom: 5%;
+}
+header.landing main h1 {
+  font-weight: 600;
+  color: var(--colorThree);
+}
+header.landing main p {
+  color: var(--colorFour);
+  margin: 3% 0;
+  line-height: var(--globalLineHeight);
+  font-weight: 400;
+}
+header.landing main .buttons {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+header.landing main .buttons button,
+section.section5 button {
+  outline: none;
+  border: none;
+  padding: 16px 30px;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 18px;
+}
+header.landing main .buttons .btn1,
+section.section5 .btn3 {
+  margin-right: 10px;
+  background-color: var(--colorOne);
+  transition: box-shadow ease-out .4s;
+}
+header.landing main .buttons .btn1:hover,
+section.section5 .btn3:hover {
+  box-shadow: 0px 0px 8px var(--colorOne);
+}
+header.landing main .buttons .btn2,
+section.section5 .btn4 {
+  background-color: var(--colorTwo);
+  transition: box-shadow ease-out .2s;
+}
+header.landing main .buttons .btn2:hover,
+section.section5 .btn4:hover {
+  box-shadow: 0px 0px 8px var(--colorTwo);
+}
+/* End Landing Section */
+/* Start 01 Section */
+section.section1  {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
+  justify-content: flex-start;
+  gap: 40px;
+}
+section.section1 section.image-2 {
+  width: 752px;
+  height: 572px;
+}
+section.section1 section.image-2 img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  left: -5%;
+}
+
+section.section1 section.cards article {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  line-height: var(--globalLineHeight);
+}
+section.section1 section.cards article h3 {
+  color: var(--colorThree);
+}
+section.section1 section.cards article p {
+  max-width: 350px;
+  line-height: var(--globalLineHeight);
+  color: var(--colorFour);
+}
+/* End 01 Section */
+/* Start 02 Section */
+section.section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+/* End 02 Section */
+/* Start 03 Section */
+section.section3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 30px
+}
+section.section3 article:first-child,
+section.section3 article:nth-child(2),
+section.section3 article:last-child {
+  text-align: center;
+}
+section.section3 article img {
+  margin-bottom: 30px;
+  text-align: center;
+}
+section.section3 article h3 {
+  margin-bottom: 20px;
+  color: var(--colorThree);
+  text-align: center;
+}
+section.section3 article p {
+  color: var(--colorFour);
+  line-height: var(--globalLineHeight);
+  text-align: center;
+}
+/* End 03 Section */
+/* Start 04 Section */
+section.section4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+section.section4 img {
+  cursor: pointer;
+}
+/* End 04 Section */
+/* Start 05 Section */
+section.section5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-bottom: 120px;
+}
+/* End 05 Section */
+/* Start Footer Section */
+footer {
+  background-color: #eee;
+  padding-right: 10%;
+  padding-left: 10%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer section.left {
+  display: flex;
+  align-items: flex-start;
+}
+footer section.left section.image-3 {
+  width: 50px;
+  height: 50px;
+}
+footer section.left section.image-3 img {
+  width: 100%;
+  height: 100%;
+}
+footer section.left ul {
+  display: grid;
+  grid-template-columns: repeat(3, 170px);
+  padding-left: 120px;
+  left: 0;
+  gap: 20px;
+  text-align: left;
+}
+footer section.left ul li a {
+  transition: ease color .4s;
+}
+footer section.left ul li a:hover {
+  color: var(--colorOne);
+}
+footer section.right section.social ul li i {
+  margin-left: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  transition: color .4s ease;
+}
+footer section.right section.social ul li i:hover {
+  color: var(--colorOne)
+}
+/* End Footer Section */
